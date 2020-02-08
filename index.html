@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>amira</title>
+</head>
+<style>
+    
+body {
+    margin: 0;
+    font-family:sans-serif;
+
+    
+}
+
+p, blockquote {
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+
+.logo {
+    width: 130px;
+    margin-left: 30px;
+}
+.hide-mobile {
+    display: none;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.server {
+    width: 50%;
+    margin:2em auto 2em 25%;
+}
+
+h1{
+    position: relative;
+    z-index: 3;
+}
+
+.subhead {
+    font-size: 1.1em;
+}
+.blue-container {
+    width: 100%;
+    background: #00C2FF;
+    color: #fff;
+    margin-top: 15%;
+    padding: 4em 0 2em;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+}
+.blue-container ul {
+    transform: skewY(2deg);
+}
+
+.blue-container ul li {
+    margin-bottom: 3em;
+}
+
+.blue-container ul li p {
+    padding: 0 .5em;
+}
+
+.blue-container img {
+    width: 14%;
+}
+
+.blue-container ul li:nth-child(3) img {
+    width: 8%;
+}
+
+.gray-container {
+    background: #F6F6F6;
+    padding: 4em 0 2em;
+    margin-top: -3%;
+}
+
+.gray-container ul li:first-child {
+    margin-bottom: 2em;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+figcaption {
+    font-weight: bold;
+    color: #00C2FF;
+  
+}
+
+h2 {
+    margin-top: 7%;
+}
+
+.cta {
+    background: #00CC80;
+    width: calc(70% - 1em);
+    display: block;
+    color: #fff;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+
+.footer-container {
+    width: 100%;
+    background: #3D444A;
+    color: #fff;
+    padding: 3em 0;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+}
+
+.footer-container .container {
+    transform: skewY(-2deg);
+}
+ul.footer-links {
+    margin: 0 auto;
+}
+
+ul.footer-links li {
+    display: inline-block;
+}
+
+ul.footer-links li a {
+    color: #9D9D9D;
+    font-size: .8em;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: rgb(36,41,44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: rgb(49, 55, 59);
+}
+
+nav ul li a:hover {
+    background-color: rgb(65, 73, 78);
+}
+.scroll {
+        width: 30px;
+        animation: move 2s infinite alternate;
+    }
+    @keyframes move{
+        from{
+            transform: translateY(0px);
+        }
+        to {
+            transform: translateY(20px);
+        }
+    }
+    
+.x {
+    display: flex;
+}
+.menu {
+    width: 25px;
+    margin-top: 45%;
+}
+
+</style>
+<body>
+  <div class="container"> 
+      <div class="header">
+    <img src="logo.png" alt="logo" class="logo">
+    <nav>
+        <a href="#" class="hide-desktop">
+            <img src="exit.png" alt="toggle menu" class="menu" id="menu">
+        </a>
+
+<ul class="hide-mobile">
+
+            <li><a href="#">home</a></li>
+            <li><a href="#">services</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+    </div>
+ 
+<div class="section">
+    <img src="server.png" alt="server graphic" class="server">
+    
+    <h1>Web Hosting for the Modern Era</h1>
+    <p class="subhead">Go serverless and pay only for what you use.</p>
+
+    <img src="scroll.png" alt="scroll down" class="scroll">
+</div>
+  </div>
+  <div class="blue-container">
+  <div class="container">
+    <ul class="x">
+            <li>
+                <img src="icon-1.png" alt="Calendar icon">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+            </li>
+            <li>
+                <img src="icon-2.png" alt="Calendar icon">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+            </li>
+            <li>
+                <img src="icon-3.png" alt="Calendar icon">
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="gray">
+    <div class="container">
+        <ul>
+            <li>
+                <figure>
+                    <img src="user1.png" alt="User">
+                    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore</blockquote>
+                    <figcaption>_Jane</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="user2.png" alt="User">
+                    <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas tenetur totam, dolore
+                        
+                    </blockquote>
+                    <figcaption>_John</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <h2>Start your free trial now!</h2>
+    <a href="#" class="cta">Get Started</a>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="container">
+
+                <img src="logo-white.png" class="logo" alt="logo">
+            
+            <p class="address">Melrose Place, 90210<br>USA</p>
+            <ul class="footer-links">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
